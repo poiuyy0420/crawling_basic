@@ -29,7 +29,7 @@ for i, url in enumerate(target_url):
 
         with open(path_list[i], 'wb') as c:
             c.write(contents)
-            
+
     except HTTPError as e:
         print("Download failed .")
         print("HTTPError Code : ", e.code)
